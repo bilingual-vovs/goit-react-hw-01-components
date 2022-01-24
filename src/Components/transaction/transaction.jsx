@@ -3,9 +3,11 @@ import propTypes from "prop-types"
 
 import "modern-normalize/modern-normalize.css"
 
+import style from "./transaction.module.css"
+
 const Transaction = ({type, amount, currency, id}) => {
     return (
-        <tr id={id}>
+        <tr className={style.item} id={id}>
             <td>{type}</td>
             <td>{amount}</td>
             <td>{currency}</td>

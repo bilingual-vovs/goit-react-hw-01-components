@@ -4,10 +4,12 @@ import propTypes from "prop-types"
 import "modern-normalize/modern-normalize.css"
 import Transaction from "../transaction/transaction";
 
+import style from "./TransactionHistory.module.css"
+
 const TransactionHistory = ({items}) => {
     return (
-        <table className="transaction-history">
-            <thead>
+        <table className={style.transactionHistory}>
+            <thead className={style.head}>
                 <tr>
                 <th>Type</th>
                 <th>Amount</th>
